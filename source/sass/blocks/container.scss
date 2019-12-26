@@ -1,0 +1,16 @@
+.container {
+  max-width: 100%;
+  width: $desktop + 40px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &--relative {
+    position: relative;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container--off {
+    padding: 0;
+  }
+}

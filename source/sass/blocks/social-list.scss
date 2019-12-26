@@ -1,0 +1,16 @@
+.social-list {
+  @include list-none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-list__item {
+  margin-left: 10px;
+}
+
+.social-list__link {
+  @include hover;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

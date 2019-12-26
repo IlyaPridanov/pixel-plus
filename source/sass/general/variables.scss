@@ -1,0 +1,49 @@
+$desktop: 1280px;
+$tablet: 767px;
+
+$white: #ffffff;
+$white-opacity: rgba(256, 256, 256, 0.6);
+$white-middle-opacity: rgba(256, 256, 256, 0.7);
+$white-light-opacity: rgba(256, 256, 256, 0.9);
+$black: #000000;
+
+$text-color: #212327;
+
+$primary-color: #F0F0F0;
+$primary-color-light: #DFE4EB;
+$primary-color-light-plus: #F0F0F0;
+$primary-color-dark: #9293A6;
+$primary-color-middle: #ECECEC;
+$primary-color-middle-plus: #A6A7B1;
+
+$red: #FF0000;
+$secondary-color: #E33439;
+$secondary-color-light: #FAACAE;
+$secondary-color-middle: #C22A2E;
+
+$accent-color-dark: #0D0D14;
+$accent-color: #323232;
+$accent-color-middle: #2A3236;
+
+$rootform: #9EBF56;
+$compressive-ms: #E2C058;
+$compressive-m-mp: #C0568A;
+$compressive-s: #B0B0B0;
+$basal: #6FBBCF;
+
+$accent-color-middle: #b6bdcc;
+$accent-color-light: #f8f9fc;
+$accent-color-ultra-light: #e8e8e8;
+$accent-color-ultra-middle: #EEF0F4;
+
+$white-border: linear-gradient(to bottom right, $secondary-color-light, $primary-color);
+
+$blue-red-gradient-desktop: radial-gradient(73.97% 89.22% at bottom left, #003d85 0%, #b80027 100%);
+$blue-red-gradient-tablet: radial-gradient(84.19% 86.65% at bottom left, #003d85 0%, #b80027 100%);
+$blue-red-gradient-mobile: radial-gradient(117.51% 134.94% at -4.28% 96.05%, #003d85 0%, #b80027 100%);
+
+$daxline: "DaxlinePro", "Arial", sans-serif;
+$roboto: "Roboto", "Arial", sans-serif;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

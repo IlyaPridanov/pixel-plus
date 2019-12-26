@@ -1,0 +1,38 @@
+.news-block {
+  padding-top: 150px;
+  background-color: $primary-color-light;
+}
+
+.news-block__caption {
+  margin: 0;
+  margin-bottom: 47px;
+
+  font-family: $daxline;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.2;
+  color: $black;
+  text-align: center;
+}
+
+.news-block__btn-block {
+  top: 45.9%;
+}
+
+@media(max-width: 1600px) {
+  .news-block__btn-block {
+    width: 103.6%;
+  }
+}
+
+@media(max-width: 1400px) {
+  .news-block__btn-block {
+    display: none;
+  }
+}
+
+@media(max-width: 900px) {
+  .news-block {
+    padding-top: 50px;
+  }
+}

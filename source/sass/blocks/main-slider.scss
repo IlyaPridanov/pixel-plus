@@ -1,0 +1,115 @@
+.main-slider {
+  position: relative;
+  padding-top: 124px;
+  padding-bottom: 81px;
+
+  background-image: url('../img/slider1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $primary-color;
+
+  & .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: $white;
+    opacity: 0.7;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background-color: $secondary-color;
+    opacity: 1;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-slider {
+    background-image: url("../img/slider1@2x.jpg");
+  }
+}
+
+.main-slider__row {
+  position: relative;
+}
+
+.main-slider__container {
+  margin-bottom: 147px;
+}
+
+.main-slider__wrapper {
+  @include list-none;
+}
+
+.main-slider__item {
+  transform: translateX(1px);
+}
+
+.main-slider__caption {
+  margin: 0;
+  margin-bottom: 48px;
+  position: relative;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.4;
+
+  color: $accent-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 93px;
+    height: 3px;
+    background-color: $secondary-color;
+  }
+}
+
+.main-slider__text {
+  width: 256px;
+  margin-bottom: 65px;
+
+  font-family: $daxline;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: $accent-color;
+}
+
+.main-slider__link {
+  @include hover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 44px;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $accent-color;
+  text-decoration: none;
+
+  border: 3px solid $secondary-color;
+}
+
+@media(max-width: 1600px) {
+  .main-slider .slider-btn {
+    width: 60%;
+    top: 130%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .main-slider {
+    padding-top: 54px;
+    // background-image: none;
+    background-position: 82% 43%;
+  }
+}
+

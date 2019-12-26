@@ -1,0 +1,13 @@
+.phone-list {
+  @include list-none;
+}
+
+.phone-list__link {
+  @include hover;
+
+  font-size: 22px;
+  font-family: $roboto;
+  font-weight: 700;
+  text-decoration: none;
+  color: $accent-color;
+}

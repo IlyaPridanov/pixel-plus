@@ -1,0 +1,14 @@
+@mixin list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin hover {
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}

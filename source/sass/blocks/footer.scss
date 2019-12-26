@@ -1,0 +1,146 @@
+.footer {
+  padding-top: 67px;
+  padding-bottom: 60px;
+  background-color: $accent-color;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__column {
+  margin-left: auto;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.footer__logo-link {
+  @include hover;
+}
+
+.footer__text {
+  margin-bottom: 2px;
+  font-family: $daxline;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.25;
+  color: $white;
+  max-width: 170px;
+}
+
+.footer__caption {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: $daxline;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.footer__list {
+  @include list-none;
+}
+
+.footer__link {
+  @include hover;
+  font-family: $daxline;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: $white;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.footer__phone-list {
+  margin-bottom: 7px;
+  a {
+    color: $white;
+    line-height: 1;
+  }
+}
+
+.footer__btn {
+  @include hover;
+  padding: 0;
+  margin-left: auto;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 188px;
+    height: 47px;
+
+  background-color: transparent;
+  font-family: $daxline;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  color: $white;
+  border: 3px solid $red;
+}
+
+.footer__social-list {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+
+@media(max-width: 1050px) {
+  .footer__column {
+    display: none;
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .footer__logo-root {
+    display: block;
+    margin-left: -10px;
+  }
+}
+
+@media(max-width: 404px) {
+  .footer__row {
+    justify-content: center;
+  }
+
+  .footer__column {
+    margin: 0;
+  }
+
+  .footer__logo-link {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__text {
+    margin-bottom: 8px;
+    min-width: none;
+    text-align: center;
+  }
+
+  .footer__logo-root {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .footer__btn {
+    margin-bottom: 19px;
+  }
+
+  .footer__social-list {
+    justify-content: center;
+  }
+}

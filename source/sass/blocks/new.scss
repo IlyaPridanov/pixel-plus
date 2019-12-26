@@ -1,0 +1,285 @@
+.new {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new__column {
+  width: calc(100%/3 - 22px);
+  margin-left: 32px;
+
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $white;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.new__row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: $white;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+  &--overflow {
+    overflow: hidden;
+  }
+}
+
+.new__img-block {
+  position: relative;
+  overflow: hidden;
+  width: 191px;
+
+  &--gfno {
+    width: 220px;
+  }
+
+  &--no-overflow {
+    overflow: visible;
+  }
+}
+
+.new__img {
+  position: absolute;
+  display: block;
+  top: 32px;
+  left: 26%;
+  max-width: none;
+
+  &--gfno {
+    top: 33px;
+    left: -23px;
+  }
+
+  &--sdlb-input {
+    top: 0;
+    left: 0;
+  }
+
+  &--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &--sdlb-min {
+    top: 52px;
+    left: 65px;
+  }
+}
+
+.new__text-block {
+  position: relative;
+  flex-grow: 1;
+  padding-left: 25px;
+  padding-bottom: 28px;
+  // width: calc(100% - 220px);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25px;
+    width: calc(100% - 50px);
+    height: 1px;
+
+    background-color: $primary-color-light;
+  }
+
+  &--gfno {
+    padding: 0;
+
+    &::after {
+      top: 22%;
+      left: 0;
+      width: 90%;
+    }
+  }
+
+  &--opacity {
+    z-index: 10;
+    background-color: $white-light-opacity;
+  }
+
+  &--red {
+    background-color: $secondary-color;
+    color: $white;
+
+    & .new__category-link {
+      color: $white;
+    }
+
+    & .new__link {
+      border-color: $white;
+      color: $white;
+    }
+
+    & a svg {
+      fill: $white;
+    }
+  }
+}
+
+.new__caption {
+  margin-top: 25px;
+  margin-bottom: 33px;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.4;
+
+  color: $accent-color-dark;
+
+  &--gfno {
+    font-size: 38px;
+    margin-top: 63px;
+    margin-bottom: 33px;
+  }
+}
+
+.new__category {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: $accent-color-dark;
+
+  &--gfno {
+    margin-bottom: 41px;
+  }
+}
+
+.new__text {
+  width: 166px;
+  margin-bottom: 22px;
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: $accent-color-dark;
+}
+
+.new__category-link {
+  @include hover;
+
+  color: red;
+}
+
+.new__link {
+  @include hover;
+  display: flex;
+  align-items: center;
+  // margin-right: 38px;
+  width: 141px;
+  height: 35px;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $accent-color-dark;
+
+  border: 3px solid $secondary-color;
+
+  & svg {
+    margin-left: 13px;
+    margin-right: 16px;
+    fill: $secondary-color;
+    transform: scale(0.7);
+  }
+}
+
+@media(max-width: 1300px) {
+  .new {
+    justify-content: center;
+  }
+
+  .new__column {
+    width: calc(100%/3 - 22px);
+    &--flex {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+  }
+
+  .new__img--sdlb,
+  .new__img--sdlb-min {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .new__img-block {
+    width: 34%;
+  }
+}
+
+@media(max-width: 1030px) {
+  .new__row {
+    overflow: hidden;
+  }
+
+  .new__column {
+    margin-left: 20px;
+  }
+
+  .new-slider_caption {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 700px) {
+  .new__column {
+    width: calc(100%/2 - 20px);
+  }
+
+  .new-slider__caption-row {
+    display: block;
+  }
+
+  .new-slider_caption {
+    text-align: center;
+  }
+
+  .new-slider__caption-link {
+    display: block;
+    text-align: center;
+    border: none;
+  }
+
+  .new__img-block {
+    display: none;
+  }
+
+  .new__link {
+    width: calc(100% - 25px);
+  }
+}
+
+@media(max-width: 500px) {
+  .new__column:last-child {
+    display: none;
+  }
+
+  .new__column {
+    width: calc(100% - 20px);
+  }
+}
+
